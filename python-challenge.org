@@ -1,5 +1,5 @@
 
-* PythonChallenge [4/5]
+* PythonChallenge [5/5]
 ** DONE Challenge 1
 Just go to 2**38
 
@@ -62,8 +62,59 @@ return re.findall(RE, s)
 #+RESULTS: CH4
 | qIQNlQSLi | eOEKiVEYj | aZADnMCZq | bZUTkLYNg | uCNDeHSBj | kOIXdKBFh | dXJVlGZVm | gZAGiLQZx | vCJAsACFl | qKWGtIDCj |
 
-** TODO Challenge 5
+** DONE Challenge 5
 
 linkedlist.html says to go to linkedlist.php
 
 when I click on the image the get paramter changes to 12345, I get 44827, I change it in the url, I get 45439 nice I see where this is going.
+
+so I'll write sometype of crawler.
+
+
+#+NAME: CH5
+#+BEGIN_SRC python
+import requests
+import re
+url = 'http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing=12345'
+f = requests.get('http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing=12345').text
+return re.search(r'\d+', f).group(0)
+
+#+END_SRC
+
+#+RESULTS: CH5
+: 44827
+
+Really easy with requests and re.
+
+
+#+NAME: 
+#+BEGIN_SRC python
+import requests
+import re
+url = 'http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing=12345'
+d = 12345
+while 1:
+    f = requests.get('http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing=%d' % d).text
+    d = int(re.search(r'\d+', f).group(0))
+    print(f)
+
+#+END_SRC
+
+This took a little while until it wants me to divide by two, so I did.
+
+after a while the server responded:
+
+"There maybe misleading numbers in the 
+text. One example is 82683. Look only for the next nothing and the next nothing is 63579
+You've been misleaded to here. Go to previous 
+one and check."
+
+<img src="http://m.memegen.com/9akv28.jpg"
+alt="" align="left"
+title="image title"
+class="img"
+</img>
+
+I was like, fuck this not again, so I rerun my code for 63579.
+
+after some minutes of labor due to slow internet connection the server returned peak.html yay :)
