@@ -109,11 +109,10 @@ text. One example is 82683. Look only for the next nothing and the next nothing 
 You've been misleaded to here. Go to previous 
 one and check."
 
-<img src="http://m.memegen.com/9akv28.jpg"
-alt="" align="left"
-title="image title"
-class="img"
-</img>
+#+CAPTION: Fuck this.
+#+NAME:   fig:MEH
+[[http://m.memegen.com/9akv28.jpg]]
+
 
 I was like, fuck this not again, so I rerun my code for 63579.
 
