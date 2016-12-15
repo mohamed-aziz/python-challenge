@@ -25,7 +25,7 @@ return f(s), f('map')
 
 I didn't know about string.maketrans() (as I checked it's str.maketrans() on my python3), but I'm too lazy to make a translation table.
 ** DONE Challenge 3
-
+Ok.
 #+NAME: 
 #+BEGIN_SRC python
 s = """
@@ -40,6 +40,7 @@ return list(filter(lambda x: x.isalpha(), s))
 
 #+RESULTS:
 | e | q | u | a | l | i | t | y |
+
 ** DONE Challenge 4
 
 I can see some mess in the source code.
