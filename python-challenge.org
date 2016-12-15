@@ -1,5 +1,5 @@
 
-* PythonChallenge [6/6]
+* PythonChallenge [6/7]
 ** DONE Challenge 1
 Just go to 2**38
 
@@ -122,7 +122,6 @@ I was like, fuck this not again, so I rerun my code for 63579.
 
 after some minutes of labor due to slow internet connection the server returned peak.html yay :)
 
-
 ** DONE Challenge 6
 
 Peak hell, got it so something related to pickle I'll just download that banner.p and run some code.
@@ -158,3 +157,19 @@ for l in pickle.loads(open('banner.p', 'rb').read()):
 
 
 ok go -> channel.html
+
+
+
+** TODO Challenge 7
+
+There is just an image of a zipper, maybe they mean the function zip, but on what?
+
+Of searched on the page source code but nothing, I replaced the html with a zip in the url and voila, there is some
+file called channel.zip, let's investigate.
+
+Unzipping that file, I find text files maybe related to the linkedlist challenge and a readme.txt which says to start 90052, and it also says that the answer is inside the zip file,
+the answer is inside the zip?
+
+I don't have knowledge about zip files but I think that they have some info like exif for images ?
+zipinfo on my linux gave nothing (unzip -Z) gave nothing.
+So i tried to use zipfile on python, i tried to see the comment attribute but it's empty.
