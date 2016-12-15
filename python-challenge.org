@@ -1,5 +1,5 @@
 
-* PythonChallenge [5/5]
+* PythonChallenge [6/6]
 ** DONE Challenge 1
 Just go to 2**38
 
@@ -66,7 +66,6 @@ return re.findall(RE, s)
 #+RESULTS: CH4
 | qIQNlQSLi | eOEKiVEYj | aZADnMCZq | bZUTkLYNg | uCNDeHSBj | kOIXdKBFh | dXJVlGZVm | gZAGiLQZx | vCJAsACFl | qKWGtIDCj |
 
-
 ** DONE Challenge 5
 
 linkedlist.html says to go to linkedlist.php
@@ -122,3 +121,40 @@ one and check."
 I was like, fuck this not again, so I rerun my code for 63579.
 
 after some minutes of labor due to slow internet connection the server returned peak.html yay :)
+
+
+** DONE Challenge 6
+
+Peak hell, got it so something related to pickle I'll just download that banner.p and run some code.
+
+
+#+NAME: CH6
+#+BEGIN_SRC python
+
+import pickle
+pickle.loads(open('banner.p', 'rb'))
+
+#+END_SRC
+
+and I got some matrix, with tuples of some char and number, I have done some basic stenography before so I can see something.
+I can see that the sum of all the numbers of some line is always 95 so I'm sure this represents some figure.
+
+and you know what I wasn't wrong
+
+[[pickle.png]]
+
+
+here is the code
+
+
+#+NAME: CH6
+#+BEGIN_SRC python
+for l in pickle.loads(open('banner.p', 'rb').read()):
+     s = ''
+     for f in l:
+        s += f[0] * f[1]
+     print(s)
+#+END_SRC
+
+
+ok go -> channel.html
