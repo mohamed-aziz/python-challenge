@@ -10,6 +10,8 @@ return 2**38
 
 #+RESULTS: CH1
 : 274877906944
+
+
 ** DONE Challenge 2
 Just a cesar cipher?
 
@@ -24,6 +26,7 @@ return f(s), f('map')
 | i hope you didnt translate it by hand. thats what computers are for. doing it in by hand is inefficient and that's why this text is so long. using string.maketrans() is recommended. now apply on the url. | ocr |
 
 I didn't know about string.maketrans() (as I checked it's str.maketrans() on my python3), but I'm too lazy to make a translation table.
+
 ** DONE Challenge 3
 Ok.
 #+NAME: 
@@ -40,6 +43,7 @@ return list(filter(lambda x: x.isalpha(), s))
 
 #+RESULTS:
 | e | q | u | a | l | i | t | y |
+
 
 ** DONE Challenge 4
 
@@ -61,6 +65,7 @@ return re.findall(RE, s)
 
 #+RESULTS: CH4
 | qIQNlQSLi | eOEKiVEYj | aZADnMCZq | bZUTkLYNg | uCNDeHSBj | kOIXdKBFh | dXJVlGZVm | gZAGiLQZx | vCJAsACFl | qKWGtIDCj |
+
 
 ** DONE Challenge 5
 
