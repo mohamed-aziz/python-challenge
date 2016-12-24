@@ -1,5 +1,5 @@
 
-* PythonChallenge [6/7]
+* PythonChallenge [8/8]
 ** DONE Challenge 1
 Just go to 2**38
 
@@ -190,7 +190,7 @@ ok go -> channel.html
 
 
 
-** TODO Challenge 7
+** DONE Challenge 7
 
 There is just an image of a zipper, maybe they mean the function zip, but on what?
 
@@ -1186,3 +1186,20 @@ print(''.join([f.comment.decode('utf-8') for f in files]))
 *Gotcha*
 
 [[hockey.png]]
+
+** DONE Challenge 8
+
+The server responds with 
+
+"it's in the air. look at the letters."
+
+nothing else.
+
+Air is composed of nitrogen and oxygen and some other gazes.
+
+let's try them.
+
+Yay it's oxygen.html
+
+
+ 
